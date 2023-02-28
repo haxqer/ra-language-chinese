@@ -3,7 +3,7 @@ import { TranslationMessages } from "ra-core";
 const messages: Required<TranslationMessages> = {
   ra: {
     action: {
-      add_filter: "增加检索",
+      add_filter: "添加搜索条件",
       add: "增加",
       back: "回退",
       bulk_actions: "选中1项 |||| 选中%{smart_count}项",
@@ -130,7 +130,7 @@ const messages: Required<TranslationMessages> = {
       password: "密码",
       sign_in: "登录",
       sign_in_error: "验证失败, 请重试",
-      logout: "退出",
+      logout: "登出",
     },
     notification: {
       updated: "条目已更新 |||| %{smart_count} 项条目已更新",
