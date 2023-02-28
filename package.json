@@ -1,6 +1,6 @@
 {
   "name": "@haxqer/ra-language-chinese",
-  "version": "4.8.1",
+  "version": "4.8.1-beta1",
   "description": "Chinese messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
   "repository": "git+https://github.com/haxqer/ra-language-chinese.git",
   "homepage": "https://github.com/haxqer/ra-language-chinese",
@@ -28,11 +28,15 @@
   "files": [
     "*.md",
     "dist",
-    "src"
+    "src",
+    "lib"
   ],
   "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "prettier --write ./src/**/* && tsc --newLine LF",
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-pr": "prettier --write ./src/**/* && tsc --newLine LF",
     "build-cjs": "rimraf ./dist/cjs && tsc --outDir dist/cjs",
     "build-esm": "rimraf ./dist/esm && tsc --outDir dist/esm --module es2015",
     "watch": "tsc --outDir dist/esm --module es2015 --watch"

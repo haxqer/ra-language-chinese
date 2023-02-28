@@ -1,6 +1,6 @@
 import { TranslationMessages } from "ra-core";
 
-const messages: TranslationMessages = {
+const messages: Required<TranslationMessages> = {
   ra: {
     action: {
       add_filter: "增加检索",
