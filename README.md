@@ -18,7 +18,7 @@ npm install @haxqer/ra-language-chinese@latest
 import polyglotI18nProvider from 'ra-i18n-polyglot';
 import chineseMessages from '@haxqer/ra-language-chinese';
 
-const i18nProvider = polyglotI18nProvider(() => chineseMessages, 'zh');
+const i18nProvider = polyglotI18nProvider(() => chineseMessages, 'zh_CN');
 
 <Admin i18nProvider={i18nProvider}>
   ...
